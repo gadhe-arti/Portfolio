@@ -5,11 +5,13 @@ import Img2 from "../../assects/img2.png.jpg";
 import Img3 from "../../assects/img3.png.jpg";
 import Img4 from "../../assects/img4.png.jpg";
 import Img5 from "../../assects/img5.png.jpg";
+import Img6 from "../../assects/img6.png.jpg";
 const data = [
   {
     id: 1,
     Image: Img1,
     title: "GamePro",
+    desc: "html css javascript",
     github: "https://github.com/",
     demo: "https://comfy-praline-72cd8c.netlify.app/",
   },
@@ -17,6 +19,7 @@ const data = [
     id: 2,
     Image: Img2,
     title: "E-commerce",
+    desc: "html css javascript",
     github: "https://github.com/gadhe-arti/e-commerce-Web",
     demo: "https://glittery-shortbread-9a0445.netlify.app/",
   },
@@ -24,6 +27,7 @@ const data = [
     id: 3,
     Image: Img3,
     title: "Food-App",
+    desc: "html css javascript API",
     github: "https://github.com/gadhe-arti/Food-App",
     demo: "https://food-app-five-fawn.vercel.app/",
   },
@@ -31,6 +35,7 @@ const data = [
     id: 4,
     Image: Img4,
     title: "Todo-Generate",
+    desc: "html css javascript reactJS",
     github: "https://github.com/gadhe-arti/Todo",
     demo: "https://todo-nine-rouge.vercel.app",
   },
@@ -38,8 +43,17 @@ const data = [
     id: 5,
     Image: Img5,
     title: "GYM-web",
+    desc: "html css javascript reactJS",
     github: "https://github.com/gadhe-arti/Gym-web",
-    demo: "https://yzy2qj-5173.csb.app/",
+    demo: "https://gym-7ewp.vercel.app/",
+  },
+  {
+    id: 6,
+    Image: Img6,
+    title: "BizVisitingCard",
+    desc: "html css javascript Codegniter",
+    github: "",
+    demo: "https://bizvisitingcard.com/",
   },
 ];
 const Portfolio = () => {
@@ -50,13 +64,18 @@ const Portfolio = () => {
         <h2>Portfolio</h2>
 
         <div className="container portfolio_container">
-          {data.map(({ id, Image, title, demo, github }) => {
+          {data.map(({ id, Image, title, demo, github, desc }) => {
             return (
               <article key={id} className="portfolio_item">
                 <div className="portfolio_item_image">
                   <img src={Image} alt={title} />
                 </div>
-                <h3>{title}</h3>
+                <h3>
+                  {title}
+                  <label style={{ fontSize: "15px", color: "gray" }}> - </label>
+                  {desc}
+                </h3>
+
                 <div className="portgolio_item_cta">
                   <a href={github} target="_blank" className="btn">
                     Github

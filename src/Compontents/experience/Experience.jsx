@@ -39,7 +39,7 @@ const Experience = () => {
                 <div>
                   {" "}
                   <h4>React JS</h4>
-                  <small className="text_light">Exeperienced</small>
+                  <small className="text_light">Intermadiate</small>
                 </div>
               </article>
               <article className="experience_details">
@@ -55,18 +55,18 @@ const Experience = () => {
                 <div>
                   {" "}
                   <h4>Tailwind</h4>
-                  <small className="text_light">Exeperienced</small>
+                  <small className="text_light">Intermadiate</small>
                 </div>
               </article>
             </div>
           </div>
           <div className="experience_backend">
-            <h3>backend Development</h3>
+            <h3>Backend Development</h3>
             <div className="experience_content">
               <article className="experience_details">
                 <BiSolidBadgeCheck className="experience_details_icons" />
                 <div>
-                  <h4>Node JS</h4>
+                  <h4>Codeigniter</h4>
                   <small className="text_light">Exeperienced</small>
                 </div>
               </article>
@@ -74,14 +74,14 @@ const Experience = () => {
                 <BiSolidBadgeCheck className="experience_details_icons" />
                 <div>
                   <h4>MongoDB</h4>
-                  <small className="text_light">Exeperienced</small>
+                  <small className="text_light">Intermadiate</small>
                 </div>
               </article>
               <article className="experience_details">
                 <BiSolidBadgeCheck className="experience_details_icons" />
                 <div>
                   <h4>PHP</h4>
-                  <small className="text_light">Basic</small>
+                  <small className="text_light">Exeperienced</small>
                 </div>
               </article>
               <article className="experience_details">
